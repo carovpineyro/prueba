@@ -1,1 +1,925 @@
-[]
+[
+    {
+        "id": "2b23389ca8a59c8f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3ad8fc0a1fc22f62",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2c369bf14fa2070d",
+        "type": "group",
+        "z": "3ad8fc0a1fc22f62",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e26e11b44f3edb6a",
+            "c33b168e517433b4",
+            "b5c0e01e71641a8c",
+            "87673e067aed456b",
+            "84571ed73811c83a",
+            "ece92e456f82a033"
+        ],
+        "x": 34,
+        "y": 299,
+        "w": 512,
+        "h": 142
+    },
+    {
+        "id": "dfd6a7d15e250af4",
+        "type": "ui_group",
+        "name": "Boton",
+        "tab": "00a315457ce60904",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "d0c428dd3c4971e0",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "a592876ab0cc1e6e",
+        "order": 1,
+        "disp": true,
+        "width": 18
+    },
+    {
+        "id": "88ee122591cecea3",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:54845/UA/NodeRED/Compact",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "c2461a15ab9181ba",
+        "type": "ui_group",
+        "name": "Robot",
+        "tab": "c86124da9cbae1d7",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "51ce6aa1.620754",
+        "type": "ui_group",
+        "name": "ui_control",
+        "tab": "3b08fac0.8f06b6",
+        "order": 1,
+        "disp": true,
+        "width": 22,
+        "collapse": false
+    },
+    {
+        "id": "51c36d00745060b1",
+        "type": "ui_group",
+        "name": "Inidicadores",
+        "tab": "c86124da9cbae1d7",
+        "order": 2,
+        "disp": true,
+        "width": "24",
+        "collapse": true
+    },
+    {
+        "id": "00a315457ce60904",
+        "type": "ui_tab",
+        "name": "ALARMAS",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a592876ab0cc1e6e",
+        "type": "ui_tab",
+        "name": "HISTORIADOR",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c86124da9cbae1d7",
+        "type": "ui_tab",
+        "name": "SCADA",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3b08fac0.8f06b6",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "track_changes",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fcf911079ca1403d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c8c54540ee021370",
+        "type": "ui_group",
+        "name": "Imagen",
+        "tab": "4206382e78092673",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": true
+    },
+    {
+        "id": "6b59b8d7e5aeca47",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://140.11.2.120:4840/",
+        "secpol": "None",
+        "secmode": "None",
+        "login": true
+    },
+    {
+        "id": "a56bb325ca99b142",
+        "type": "ui_group",
+        "name": "Tabla de Valores",
+        "tab": "4206382e78092673",
+        "order": 3,
+        "disp": true,
+        "width": "14",
+        "collapse": true
+    },
+    {
+        "id": "32c5549139f454b5",
+        "type": "ui_group",
+        "name": "Robot 1",
+        "tab": "46ccd51df051b922",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "4a1c80ebba79795e",
+        "type": "ui_group",
+        "name": "Robot 2",
+        "tab": "46ccd51df051b922",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "92eae8cb861e331a",
+        "type": "ui_group",
+        "name": "Robot 3",
+        "tab": "46ccd51df051b922",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "635b2447c01eaf57",
+        "type": "ui_group",
+        "name": "Robot 4",
+        "tab": "46ccd51df051b922",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "751c42a3291ed804",
+        "type": "ui_group",
+        "name": "Seleccion de Robot",
+        "tab": "4206382e78092673",
+        "order": 2,
+        "disp": true,
+        "width": 14,
+        "collapse": true
+    },
+    {
+        "id": "1c84b6cb8f92d224",
+        "type": "ui_group",
+        "name": "Datos Individuales",
+        "tab": "4206382e78092673",
+        "order": 4,
+        "disp": true,
+        "width": 14,
+        "collapse": false
+    },
+    {
+        "id": "1b0808baa6ef6f44",
+        "type": "ui_group",
+        "name": "Seleccion de Fechas",
+        "tab": "d9a01221fcf9d2c2",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": true
+    },
+    {
+        "id": "1eefecd2e3cc77f7",
+        "type": "ui_group",
+        "name": "Selección de parametros",
+        "tab": "d9a01221fcf9d2c2",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": true
+    },
+    {
+        "id": "634610712b374c49",
+        "type": "ui_group",
+        "name": "Gráfica",
+        "tab": "d9a01221fcf9d2c2",
+        "order": 3,
+        "disp": true,
+        "width": "16",
+        "collapse": true
+    },
+    {
+        "id": "b3706f604caa695e",
+        "type": "ui_group",
+        "name": "Tabla",
+        "tab": "891cbb644b4cf85c",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": true
+    },
+    {
+        "id": "b489c3746a984f86",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://140.11.2.121:4840/",
+        "secpol": "None",
+        "secmode": "None",
+        "login": true
+    },
+    {
+        "id": "d939064e8df273af",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://140.11.2.122:4840/",
+        "secpol": "None",
+        "secmode": "None",
+        "login": true
+    },
+    {
+        "id": "a82214e1216123e9",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://140.11.2.123:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "login": true
+    },
+    {
+        "id": "3d779dc2651c1666",
+        "type": "ui_group",
+        "name": "Status de conexión",
+        "tab": "4206382e78092673",
+        "order": 5,
+        "disp": true,
+        "width": 8,
+        "collapse": false
+    },
+    {
+        "id": "4206382e78092673",
+        "type": "ui_tab",
+        "name": "SCADA FOR KUKA",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "46ccd51df051b922",
+        "type": "ui_tab",
+        "name": "CONFIGURACION",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d9a01221fcf9d2c2",
+        "type": "ui_tab",
+        "name": "HISTORIADOR",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "891cbb644b4cf85c",
+        "type": "ui_tab",
+        "name": "ALARMAS",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3e858009f33244e6",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "92a1d6ee10b50ab7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.4",
+        "port": "1234",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "71a3a8db6d658761",
+        "type": "sqlitedb",
+        "db": "C:\\Users\\m_cas\\Documents\\node-red-sqlite\\OPT-SCADA.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "201a5f1f03cb4f9e",
+        "type": "switch",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "",
+        "property": "payload[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Micrometro",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Scanner",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "267d1835df61e10c"
+            ],
+            [
+                "a1ee946030558ae6"
+            ]
+        ]
+    },
+    {
+        "id": "31fe2195dc5f04dd",
+        "type": "function",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "function 1",
+        "func": "// para obtener valores de flujo\n//let contador = flow.get('contador');\n// para incrementar valor de conteo\n//contador = contador + 1\n// para asignar valor a variabl de flujo\n//flow.set('contador',contador);\n\nmsg.payload = msg.payload.split(',');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "201a5f1f03cb4f9e"
+            ]
+        ]
+    },
+    {
+        "id": "0834d25573be177d",
+        "type": "tcp in",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "1234",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "31fe2195dc5f04dd"
+            ]
+        ]
+    },
+    {
+        "id": "e26e11b44f3edb6a",
+        "type": "inject",
+        "z": "3ad8fc0a1fc22f62",
+        "g": "2c369bf14fa2070d",
+        "name": "Delete",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "b5c0e01e71641a8c"
+            ]
+        ]
+    },
+    {
+        "id": "c33b168e517433b4",
+        "type": "inject",
+        "z": "3ad8fc0a1fc22f62",
+        "g": "2c369bf14fa2070d",
+        "name": "Create",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "87673e067aed456b"
+            ]
+        ]
+    },
+    {
+        "id": "b5c0e01e71641a8c",
+        "type": "mysql-r2",
+        "z": "3ad8fc0a1fc22f62",
+        "g": "2c369bf14fa2070d",
+        "name": "",
+        "host": "localhost",
+        "database": "",
+        "username": "",
+        "password": "",
+        "sql": "CREATE TABLE IF NOT EXISTS [dbo].[Medidas](\n     [fecha_hora] [varchar(255)], \n     [modelo] [varchar(255)],\n     [medida1] [float],\n     [medida2] [float]\n     );\nEND\n     \n",
+        "port": "3306",
+        "pooling": false,
+        "waitForConnections": true,
+        "connectionLimit": "10",
+        "queueTimeout": "10000",
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "84571ed73811c83a"
+            ]
+        ]
+    },
+    {
+        "id": "87673e067aed456b",
+        "type": "mysql-r2",
+        "z": "3ad8fc0a1fc22f62",
+        "g": "2c369bf14fa2070d",
+        "name": "",
+        "host": "localhost",
+        "database": "",
+        "username": "",
+        "password": "",
+        "sql": "IF EXISTS(SELECT *\n          FROM   dbo.Medidas)\n  DROP TABLE dbo.Medidas",
+        "port": "3306",
+        "pooling": false,
+        "waitForConnections": true,
+        "connectionLimit": "10",
+        "queueTimeout": "10000",
+        "x": 280,
+        "y": 400,
+        "wires": [
+            [
+                "ece92e456f82a033"
+            ]
+        ]
+    },
+    {
+        "id": "84571ed73811c83a",
+        "type": "debug",
+        "z": "3ad8fc0a1fc22f62",
+        "g": "2c369bf14fa2070d",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ece92e456f82a033",
+        "type": "debug",
+        "z": "3ad8fc0a1fc22f62",
+        "g": "2c369bf14fa2070d",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "267d1835df61e10c",
+        "type": "change",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "Almacenar msg.payload[1] en micrometro lado a",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload[1]",
+                "pt": "msg",
+                "to": "micrometro_ladoa",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 220,
+        "wires": [
+            [
+                "e80e6a65219da318"
+            ]
+        ]
+    },
+    {
+        "id": "e80e6a65219da318",
+        "type": "function",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "SQL Query Ejemplo",
+        "func": "let contador = flow.get('contador');\nif (contador==2) {\n    var modelo = flow.get(\"scanner_ladob\");\n    var Medida1 = flow.get(\"micrometro_ladoa\");\n    var Medida2 = flow.get(\"Medida2\");\n    msg.sql = \"INSERT INTO dbo.Medidas ([fecha_hora], [modelo], [medida1], [medida2]) VALUES (NOW(), ?, ?, ?)\";\n    msg.params = [modelo, Medida1, Medida2];\n    flow.set('contador',0);\n}\nelse{\ncontador = contador + 1;\nflow.set('contador',contador);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 240,
+        "wires": [
+            [
+                "96660892814c194b"
+            ]
+        ],
+        "info": "tengo que declarar contador aunque es el mismo flow?\r\nse debe de escribir como query o como declaracion con DIM y los &&"
+    },
+    {
+        "id": "96660892814c194b",
+        "type": "mysql-r2",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "",
+        "host": "localhost",
+        "database": "",
+        "username": "",
+        "password": "",
+        "sql": "",
+        "port": "3306",
+        "pooling": false,
+        "waitForConnections": true,
+        "connectionLimit": "10",
+        "queueTimeout": "10000",
+        "x": 1240,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ff3d596bf219908",
+        "type": "inject",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "7dbb3ce8258176ed"
+            ]
+        ]
+    },
+    {
+        "id": "7dbb3ce8258176ed",
+        "type": "change",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "contador",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1ee946030558ae6",
+        "type": "change",
+        "z": "3ad8fc0a1fc22f62",
+        "name": "Almacenar msg.payload[2] en scanner lado b",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload[2]",
+                "pt": "msg",
+                "to": "scanner_ladob",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 260,
+        "wires": [
+            [
+                "e80e6a65219da318"
+            ]
+        ]
+    }
+]
